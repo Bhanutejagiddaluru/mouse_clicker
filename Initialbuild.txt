@@ -1,0 +1,146 @@
+Microsoft Windows [Version 10.0.26220.7271]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click>code .
+
+D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click>pip install pyinstaller
+Defaulting to user installation because normal site-packages is not writeable
+Collecting pyinstaller
+  Downloading pyinstaller-6.17.0-py3-none-win_amd64.whl.metadata (8.5 kB)
+Collecting altgraph (from pyinstaller)
+  Downloading altgraph-0.17.5-py2.py3-none-any.whl.metadata (7.5 kB)
+Requirement already satisfied: packaging>=22.0 in c:\users\stain\appdata\roaming\python\python313\site-packages (from pyinstaller) (24.2)
+Collecting pefile>=2022.5.30 (from pyinstaller)
+  Downloading pefile-2024.8.26-py3-none-any.whl.metadata (1.4 kB)
+Collecting pyinstaller-hooks-contrib>=2025.9 (from pyinstaller)
+  Downloading pyinstaller_hooks_contrib-2025.10-py3-none-any.whl.metadata (16 kB)
+Collecting pywin32-ctypes>=0.2.1 (from pyinstaller)
+  Downloading pywin32_ctypes-0.2.3-py3-none-any.whl.metadata (3.9 kB)
+Requirement already satisfied: setuptools>=42.0.0 in c:\users\stain\appdata\roaming\python\python313\site-packages (from pyinstaller) (80.9.0)
+Downloading pyinstaller-6.17.0-py3-none-win_amd64.whl (1.4 MB)
+   ---------------------------------------- 1.4/1.4 MB 22.5 MB/s  0:00:00
+Downloading pefile-2024.8.26-py3-none-any.whl (74 kB)
+Downloading pyinstaller_hooks_contrib-2025.10-py3-none-any.whl (447 kB)
+Downloading pywin32_ctypes-0.2.3-py3-none-any.whl (30 kB)
+Downloading altgraph-0.17.5-py2.py3-none-any.whl (21 kB)
+Installing collected packages: altgraph, pywin32-ctypes, pyinstaller-hooks-contrib, pefile, pyinstaller
+   -------------------------------- ------- 4/5 [pyinstaller]  WARNING: The scripts pyi-archive_viewer.exe, pyi-bindepend.exe, pyi-grab_version.exe, pyi-makespec.exe, pyi-set_version.exe and pyinstaller.exe are installed in 'C:\Users\stain\AppData\Roaming\Python\Python313\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed altgraph-0.17.5 pefile-2024.8.26 pyinstaller-6.17.0 pyinstaller-hooks-contrib-2025.10 pywin32-ctypes-0.2.3
+
+D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click>pyinstaller --noconfirm --onefile --windowed tinytask_clone.py
+'pyinstaller' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click>pyinstaller --noconfirm --onefile --windowed tinytask_clone.py
+'pyinstaller' is not recognized as an internal or external command,
+operable program or batch file.
+
+D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click>
+
+
+You already installed PyInstaller, but Windows cannot find it, because the script folder is NOT on your PATH.
+
+The installer told you the exact location:
+
+C:\Users\stain\AppData\Roaming\Python\Python313\Scripts
+
+So PyInstaller is installed, but you need to run it with the full path OR add that folder to PATH.
+
+# So PyInstaller is installed, but you need to run it with the full path OR add that folder to PATH.
+Try this command:
+C:\Users\stain\AppData\Roaming\Python\Python313\Scripts\pyinstaller.exe --onefile --windowed tinytask_clone.py
+
+This will work immediately.
+
+
+
+
+-----
+
+
+
+
+D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click>C:\Users\stain\AppData\Roaming\Python\Python313\Scripts\pyinstaller.exe --onefile --windowed tinytask_clone.py
+334 INFO: PyInstaller: 6.17.0, contrib hooks: 2025.10
+334 INFO: Python: 3.13.1
+364 INFO: Platform: Windows-11-10.0.26220-SP0
+364 INFO: Python environment: C:\Python313
+365 INFO: wrote D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click\tinytask_clone.spec
+379 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\Scripts\\pyinstaller.exe',
+ 'C:\\Python313\\python313.zip',
+ 'C:\\Python313\\DLLs',
+ 'C:\\Python313\\Lib',
+ 'C:\\Python313',
+ 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages',
+ 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32',
+ 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\win32\\lib',
+ 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\Pythonwin',
+ 'C:\\Python313\\Lib\\site-packages',
+ 'D:\\KENT STATE '
+ 'UNIVERSITY\\Interview_application\\interviewee_app\\mouse_click']
+1043 INFO: checking Analysis
+1044 INFO: Building Analysis because Analysis-00.toc is non existent
+1045 INFO: Looking for Python shared library...
+1045 INFO: Using Python shared library: C:\Python313\python313.dll
+1045 INFO: Running Analysis Analysis-00.toc
+1045 INFO: Target bytecode optimization level: 0
+1045 INFO: Initializing module dependency graph...
+1056 INFO: Initializing module graph hook caches...
+1104 INFO: Analyzing modules for base_library.zip ...
+2592 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+3381 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+4937 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+8188 INFO: Caching module dependency graph...
+8229 INFO: Analyzing D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click\tinytask_clone.py
+8238 INFO: Processing standard module hook 'hook-PyQt5.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+9299 INFO: Processing standard module hook 'hook-PyQt5.QtWidgets.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+12710 INFO: Processing standard module hook 'hook-PyQt5.QtCore.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+17031 INFO: Processing standard module hook 'hook-PyQt5.QtGui.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+35006 INFO: Processing standard module hook 'hook-pynput.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+35383 INFO: Processing pre-safe-import-module hook 'hook-six.moves.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+35478 INFO: Processing module hooks (post-graph stage)...
+35514 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+35798 WARNING: Hidden import "sip" not found!
+35868 INFO: Performing binary vs. data reclassification (97 entries)
+36689 INFO: Looking for ctypes DLLs
+36706 INFO: Analyzing run-time hooks ...
+36708 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
+36710 INFO: Including run-time hook 'pyi_rth_pyqt5.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
+36712 INFO: Processing pre-find-module-path hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+36714 INFO: Processing standard module hook 'hook-_pyi_rth_utils.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks'
+36718 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyInstaller\\hooks\\rthooks'
+36724 INFO: Creating base_library.zip...
+36745 INFO: Looking for dynamic libraries
+36915 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyQt5\\Qt5\\bin']
+36915 INFO: Extra DLL search directories (PATH): ['C:\\Users\\stain\\AppData\\Roaming\\Python\\Python313\\site-packages\\PyQt5\\Qt5\\bin']
+37767 INFO: Warnings written to D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click\build\tinytask_clone\warn-tinytask_clone.txt
+37782 INFO: Graph cross-reference written to D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click\build\tinytask_clone\xref-tinytask_clone.html
+37799 INFO: checking PYZ
+37799 INFO: Building PYZ because PYZ-00.toc is non existent
+37800 INFO: Building PYZ (ZlibArchive) D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click\build\tinytask_clone\PYZ-00.pyz
+37953 INFO: Building PYZ (ZlibArchive) D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click\build\tinytask_clone\PYZ-00.pyz completed successfully.
+37975 INFO: checking PKG
+37975 INFO: Building PKG because PKG-00.toc is non existent
+37975 INFO: Building PKG (CArchive) tinytask_clone.pkg
+47167 INFO: Building PKG (CArchive) tinytask_clone.pkg completed successfully.
+47171 INFO: Bootloader C:\Users\stain\AppData\Roaming\Python\Python313\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+47171 INFO: checking EXE
+47172 INFO: Building EXE because EXE-00.toc is non existent
+47172 INFO: Building EXE from EXE-00.toc
+47173 INFO: Copying bootloader EXE to D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click\dist\tinytask_clone.exe
+47244 INFO: Copying icon to EXE
+47287 INFO: Copying 0 resources to EXE
+47287 INFO: Embedding manifest in EXE
+47324 INFO: Appending PKG archive to EXE
+47477 INFO: Fixing EXE headers
+52848 INFO: Building EXE from EXE-00.toc completed successfully.
+52852 INFO: Build complete! The results are available in: D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click\dist
+
+D:\KENT STATE UNIVERSITY\Interview_application\interviewee_app\mouse_click>
+
+
+
+cd dist
+tinytask_clone.exe
